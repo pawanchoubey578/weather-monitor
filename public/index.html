@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather Monitor</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <h1>Weather Monitor</h1>
+   <div id="weather-info">Fetching weather data...</div>
+
+   <form id="threshold-form">
+      <h2>Set Temperature Threshold</h2>
+      <label for="city">City:</label>
+      <select id="city" name="city">
+         <option value="Delhi">Delhi</option>
+         <option value="Mumbai">Mumbai</option>
+         <option value="Chennai">Chennai</option>
+         <option value="Bangalore">Bangalore</option>
+         <option value="Kolkata">Kolkata</option>
+         <option value="Hyderabad">Hyderabad</option>
+      </select>
+
+      <label for="threshold">Temperature Threshold (°C):</label>
+      <input type="number" id="threshold" name="threshold" required>
+
+      <button type="submit">Set Threshold</button>
+   </form>
+
+   <script src="script.js"></script>
+</body>
+</html>
